@@ -8,3 +8,6 @@
 .error{
     background-color: rgb(233, 58, 58);
 }
+.removed{
+    background-color: orange;
+}
