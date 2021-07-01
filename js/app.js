@@ -69,17 +69,17 @@ class Store{
        }
        else{
            books = JSON.parse(localStorage.getItem('books'));
-       }
+        }
        return books;
     }
     static displayBooks(){
         const books = Store.getBooks();
         
-        books.foreach(function(book){
+        books.forEach(function(book){
         const ui = new UI();
             // addd book to UI
           ui.addBookToList(book);
-    })
+      })
     }
     static addBook(book){
       const books = Store.getBooks();
